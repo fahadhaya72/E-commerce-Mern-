@@ -9,14 +9,8 @@
       }
     }
   ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ],
   "env": {
     "VITE_API_URL": "https://e-commerce-mern-so8a.onrender.com/api"
