@@ -439,7 +439,7 @@ npm start
 4. **Deployment** - Automated CI/CD pipeline integration
 =======
 Pull requests are welcome. For major changes, open an issue first.
->>>>>>> f1f913a44e5bf9e572152ac3cf45e3a95a4906bc
+
 
 ---
 
@@ -447,7 +447,7 @@ Pull requests are welcome. For major changes, open an issue first.
 
 This project is licensed under the MIT License - see LICENSE file for details.
 
-<<<<<<< HEAD
+
 ## 🆘 Support & Troubleshooting
 
 ### Common Solutions
@@ -467,4 +467,4 @@ It’s a **complete full-stack system** designed to simulate real-world product 
 
 If you can understand and explain this project →
 you’re already ahead of most developers at your level.
->>>>>>> f1f913a44e5bf9e572152ac3cf45e3a95a4906bc
+
