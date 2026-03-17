@@ -37,7 +37,7 @@ const Dashboard = () => {
       
       // Fetch dashboard stats from backend
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:5000/api/admin/stats', {
+      const response = await fetch('https://e-commerce-mern-so8a.onrender.com/api/admin/stats', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json',
