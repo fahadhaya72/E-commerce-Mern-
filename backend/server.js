@@ -18,17 +18,24 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Database connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/ecommerce', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    maxPoolSize: 10,
-    serverSelectionTimeoutMS: 30000,
-    socketTimeoutMS: 45000,
-    bufferMaxEntries: 0,
-    bufferCommands: false,
-})
-.then(() => console.log('MongoDB connected successfully'))
-.catch((err) => console.error('MongoDB connection error:', err));
+const connectDB = async () => {
+    try {
+        await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/ecommerce', {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+            maxPoolSize: 10,
+            serverSelectionTimeoutMS: 30000,
+            socketTimeoutMS: 45000,
+        });
+        console.log('MongoDB connected successfully');
+    } catch (err) {
+        console.error('MongoDB connection error:', err);
+        process.exit(1);
+    }
+};
+
+// Connect to database before starting server
+connectDB();
 
 // Routes
 app.use('/api/auth', require('./routes/authRoutes'));
