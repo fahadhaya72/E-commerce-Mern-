@@ -19,6 +19,6 @@
     { "source": "/(.*)", "destination": "/" }
   ],
   "env": {
-    "VITE_API_URL": "https://your-backend-url.onrender.com/api"
+    "VITE_API_URL": "https://e-commerce-mern-so8a.onrender.com/api"
   }
 }
