@@ -126,7 +126,7 @@ E-commerce/
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/fahadhaya72/E-commerce-Mern-.git
 cd E-commerce
 ```
 
